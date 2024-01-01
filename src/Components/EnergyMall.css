@@ -983,7 +983,7 @@ footer .copy-right span{
     .main-container .hero-section{
         width: 90vw;
         height: 100%;
-        margin-top: 100px;
+        margin-top: 70px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1035,10 +1035,10 @@ footer .copy-right span{
     
     .hero-section .right-hand-side{
         width: 100%;
-        height: 250px;
+        height: 270px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         margin-top: 0;
     }
@@ -1054,7 +1054,7 @@ footer .copy-right span{
     }
     
     .hero-section .right-hand-side .hero-image{
-        width: 100%;
+        width: 80%;
         height: 250px;
         position: relative;
         overflow: hidden;
