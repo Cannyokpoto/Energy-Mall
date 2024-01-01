@@ -1050,7 +1050,6 @@ footer .copy-right span{
         background-color: var(--energyLightGrey);
         z-index: -100;
         display: none;
-
     }
     
     .hero-section .right-hand-side .hero-image{
@@ -1087,7 +1086,7 @@ footer .copy-right span{
         flex-direction: column;
         align-items: center;
         background-color: var(--energyLightGrey);
-        margin-top: 170px;
+        margin-top: 50px;
     }
     
     .main-wrapper .what-we-offer{
