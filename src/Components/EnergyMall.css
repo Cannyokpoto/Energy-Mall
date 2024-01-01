@@ -892,9 +892,9 @@ footer .copy-right span{
         display: flex;
         flex-direction: column;
         position: absolute;
-        gap: 50px;
+        gap: 0;
         top: 0;
-        padding-left: 15px;
+        padding-left: 0;
         width: 70vw;
         height: 100vh;
         background-color: var(--energyWhite);
@@ -902,6 +902,7 @@ footer .copy-right span{
         left: -100%;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: all .7s ease-in-out;
+        justify-content: flex-start;
     }
 
     header .mobile-navbar.mobile-navbar-open{
@@ -913,8 +914,10 @@ footer .copy-right span{
     header .mobile-navbar .mobile-navbar-items{
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         gap: 20px;
         list-style: none;
+        margin-top: 0;
     }
 
     header .mobile-navbar .mobile-navbar-items a{
@@ -961,7 +964,7 @@ footer .copy-right span{
 
     header .mobile-navbar #close{
         position: absolute;
-        left: 90%;
+        left: 75%;
         top: 10px;
         cursor: pointer;
         font-size: 30px;
