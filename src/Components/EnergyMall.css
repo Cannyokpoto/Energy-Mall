@@ -982,8 +982,8 @@ footer .copy-right span{
     
     .main-container .hero-section{
         width: 90vw;
-        height: 100vh;
-        margin-top: 150px;
+        height: 100%;
+        margin-top: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -991,7 +991,7 @@ footer .copy-right span{
     
     .hero-section .left-hand-side{
         width: 100%;
-        height: 50%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1003,44 +1003,44 @@ footer .copy-right span{
         letter-spacing: 5px;
         font-size: 12px;
         font-weight: 700;
-        line-height: 2;
+        line-height: 1;
         color: var(--energyGrey);
     }
     
     .hero-section .left-hand-side h1{
         color: var(--energyDarkBlue);
-        font-size: 30px;
+        font-size: 20px;
     }
     
     .hero-section .left-hand-side a{
         background-color: var(--energyRed);
         color: var(--energyWhite);
-        width: 45%;
+        width: 50%;
         height: 40px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        font-size: 17px;
+        font-size: 15px;
         text-decoration: none;
         border-radius: 3px;
-        padding: 0 5px 0 5px;
+        padding: 0 2px 0 2px;
         transition: all .5s;
     }
     
     .hero-section .left-hand-side a:hover{
-        width: 33%;
+        width: 50%;
     }
     
     
     .hero-section .right-hand-side{
         width: 100%;
-        height: 50%;
+        height: 250px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 100px;
+        margin-top: 0;
     }
     
     .hero-section .right-hand-side .empty{
@@ -1055,7 +1055,7 @@ footer .copy-right span{
     
     .hero-section .right-hand-side .hero-image{
         width: 100%;
-        height: 450px;
+        height: 250px;
         position: relative;
         overflow: hidden;
         transition: all 1.3s;

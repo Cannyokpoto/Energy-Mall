@@ -19,7 +19,7 @@ function Container(){
                     <div className="left-hand-side">
                         <h3>Innovation that fuels your business's evolution</h3>
                         <h1>Our solutions are tailored to meet your business needs and exceed your expectations.</h1>
-                        <a href="./contact.html">Say hello!  <span>{greater}</span></a>
+                        <a href="./contact.html">Say hello  <span>{greater}</span></a>
                     </div>
             
                     <div className="right-hand-side">
