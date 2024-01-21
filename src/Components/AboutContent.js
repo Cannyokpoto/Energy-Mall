@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { useEffect } from 'react';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import PHOTOS from './images/index.js';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -63,203 +61,201 @@ function AboutContent(){
     const [counterOn, setCounterOn] = useState(false);
 
     return(
-        <div>
-            <main className="about-container">
-                <section className="about">
-                    <h2>About Energy Mall</h2>
-                    <div className="about-energymall">
-                        <span className="years">
-                            <h5>ABOUT ENERGYMALL</h5>
-                            <h2>27 Years in Business 
-                                and counting </h2>
+        <main className="about-container">
+            <section className="about">
+                <h2>About Energy Mall</h2>
+                <div className="about-energymall">
+                    <span className="years">
+                        <h5>ABOUT ENERGYMALL</h5>
+                        <h2>27 Years in Business 
+                            and counting </h2>
+                    </span>
+
+                    <span className="empty">
+
+                    </span>
+
+                    <p>A leading digital platform that connects B2B, Supply Chain, Engineering 
+                        Products, and Services using AI and IoT to streamline buying and selling. A leading digital platform that connects B2B, 
+                        Supply Chain, Engineering Products, and Services using AI and IoT to streamline buying and selling. </p>
+                </div>
+            </section>
+
+            <section className="about-content">
+                <div className="counter">
+                    <span className="text-photo">
+                        <p>A leading digital platform that connects B2B, Supply Chain, 
+                            Engineering Products, and Services using AI and IoT
+                            to streamline buying and selling. 
+                        </p>
+
+                        <span className="white-bg">
+
+                        </span>
+
+                        <span className="red-bg">
+
+                        </span>
+                    </span>
+
+                    <ScrollTrigger className="numbers"
+                    onEnter={() => setCounterOn (true)}
+                    onExit={() => setCounterOn (false)}
+                    >
+                        <span className="clients">
+                            {counterOn && <CountUp className="num" start={0} end={100} duration={10} delay={1} />}
+                            <p>Clients</p>
                         </span>
 
                         <span className="empty">
 
                         </span>
 
-                        <p>A leading digital platform that connects B2B, Supply Chain, Engineering 
-                            Products, and Services using AI and IoT to streamline buying and selling. A leading digital platform that connects B2B, 
-                            Supply Chain, Engineering Products, and Services using AI and IoT to streamline buying and selling. </p>
-                    </div>
-                </section>
-
-                <section className="about-content">
-                    <div className="counter">
-                        <span className="text-photo">
-                            <p>A leading digital platform that connects B2B, Supply Chain, 
-                                Engineering Products, and Services using AI and IoT
-                                to streamline buying and selling. 
-                            </p>
-
-                            <span className="white-bg">
-
-                            </span>
-
-                            <span className="red-bg">
-
-                            </span>
+                        <span className="installation">
+                            {counterOn && <CountUp className="num" start={0} end={170} duration={10} delay={1} />}
+                            <p>installation</p>
                         </span>
+                    </ScrollTrigger>
+                </div>
 
-                        <ScrollTrigger className="numbers"
-                        onEnter={() => setCounterOn (true)}
-                        onExit={() => setCounterOn (false)}
-                        >
-                            <span className="clients">
-                                {counterOn && <CountUp className="num" start={0} end={100} duration={10} delay={1} />}
-                                <p>Clients</p>
-                            </span>
+                <div className="installer">
+                    <img src={PHOTOS.PHOTO26} alt="" />
+                    <hr/>
+                </div>
 
-                            <span className="empty">
+                <div className="mission-vision">
+                    <span className="statement">
+                        <img src={PHOTOS.PHOTO3} alt="" />
+                        <h3>Our Mission</h3>
+                        <p>A leading digital platform that connects B2B, Supply Chain, 
+                            Engineering Products, and Services using AI and IoT to streamline
+                            buying and selling. A leading digital platform that connects B2B, 
+                            Supply Chain, Engineering Products, and Services 
+                            using AI and IoT to streamline buying and selling. </p>
+                    </span>
 
-                            </span>
+                    <span className="statement">
+                        <img src={PHOTOS.PHOTO4} alt="" />
+                        <h3>Our Vision</h3>
+                        <p>A leading digital platform that connects B2B, Supply Chain, 
+                            Engineering Products, and Services using AI and IoT to streamline buying 
+                            and selling. A leading digital platform that connects B2B, 
+                            Supply Chain, Engineering Products, and Services 
+                            using AI and IoT to streamline buying and selling. </p>
+                    </span>
+                </div>
 
-                            <span className="installation">
-                                {counterOn && <CountUp className="num" start={0} end={170} duration={10} delay={1} />}
-                                <p>installation</p>
-                            </span>
-                        </ScrollTrigger>
-                    </div>
+                <div className="what-we-do">
+                    <h3>What We Do</h3>
 
-                    <div className="installer">
-                        <img src={PHOTOS.PHOTO26} alt="" />
-                        <hr/>
-                    </div>
-
-                    <div className="mission-vision">
-                        <span className="statement">
-                            <img src={PHOTOS.PHOTO3} alt="" />
-                            <h3>Mission</h3>
+                    <div className="our-values">
+                        <span className="value">
+                            <h3>Engineering</h3>
                             <p>A leading digital platform that connects B2B, Supply Chain, 
                                 Engineering Products, and Services using AI and IoT to streamline
                                 buying and selling. A leading digital platform that connects B2B, 
                                 Supply Chain, Engineering Products, and Services 
                                 using AI and IoT to streamline buying and selling. </p>
                         </span>
-
-                        <span className="statement">
-                            <img src={PHOTOS.PHOTO4} alt="" />
-                            <h3>Vision</h3>
+        
+                        <span className="value">
+                            <h3>Installation</h3>
                             <p>A leading digital platform that connects B2B, Supply Chain, 
-                                Engineering Products, and Services using AI and IoT to streamline buying 
-                                and selling. A leading digital platform that connects B2B, 
+                                Engineering Products, and Services using AI and IoT to streamline
+                                buying and selling. A leading digital platform that connects B2B, 
                                 Supply Chain, Engineering Products, and Services 
                                 using AI and IoT to streamline buying and selling. </p>
                         </span>
+        
+                        <span className="value">
+                            <h3>B<small>2</small>B</h3>
+                            <p>A leading digital platform that connects B2B, Supply Chain, 
+                                Engineering Products, and Services using AI and IoT to streamline
+                                buying and selling. A leading digital platform that connects B2B, 
+                                Supply Chain, Engineering Products, and Services 
+                                using AI and IoT to streamline buying and selling. </p>
+                        </span>
+        
+                    </div>
+                </div>
+            </section>
+
+            <section className="our-testimonials">
+                <h3>What our clients say</h3>
+
+                
+
+                    <Swiper
+                        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                        spaceBetween={50}
+                        slidesPerView={1}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
+                        className='testimonial'
+                        navigation = {{
+                            nextEl: '.custom-next-button',
+                            prevEl: '.custom-prev-button',
+                        }}
+                        pagination={{ clickable: true }}
+                        autoplay={{delay: 3000}} //You can just say {true} to have the default 3sec
+                        >
+
+                        {
+                            Data.map((content) =>{
+                                return(
+                                    <SwiperSlide className="mySlides">
+                                        <CustomPrevButton />
+                                        
+                                        <div className="testimony">
+                                            <img src={content.image} alt="" />
+                                            <p>{content.paragraph}</p>
+                                        </div>
+                        
+                                        <div className="testimony">
+                                            <img src={content.image2} alt="" />
+                                            <p>{content.paragraph2}</p>
+                                        </div>
+
+                                        <CustomNextButton />
+                                    </SwiperSlide>
+                                )
+                            })
+                        }
+                    </Swiper>
+                
+            </section>
+
+            <section className="satisfied-brands">
+                <h3>Brands we've worked for</h3>
+                <div className="brands">
+                    <div className="brand-logos">
+                        <img src={PHOTOS.PHOTO27} alt="" />
+                        <img src={PHOTOS.PHOTO6} alt="" />
+                        <img src={PHOTOS.PHOTO20} alt="" />
+                        <img src={PHOTOS.PHOTO12} alt="" />
+                        <img src={PHOTOS.PHOTO27} alt="" />
+                        <img src={PHOTOS.PHOTO6} alt="" />
                     </div>
 
-                    <div className="what-we-do">
-                        <h3>What We Do</h3>
-
-                        <div className="our-values">
-                            <span className="value">
-                                <h3>Engineering</h3>
-                                <p>A leading digital platform that connects B2B, Supply Chain, 
-                                    Engineering Products, and Services using AI and IoT to streamline
-                                    buying and selling. A leading digital platform that connects B2B, 
-                                    Supply Chain, Engineering Products, and Services 
-                                    using AI and IoT to streamline buying and selling. </p>
-                            </span>
-            
-                            <span className="value">
-                                <h3>Installation</h3>
-                                <p>A leading digital platform that connects B2B, Supply Chain, 
-                                    Engineering Products, and Services using AI and IoT to streamline
-                                    buying and selling. A leading digital platform that connects B2B, 
-                                    Supply Chain, Engineering Products, and Services 
-                                    using AI and IoT to streamline buying and selling. </p>
-                            </span>
-            
-                            <span className="value">
-                                <h3>B<small>2</small>B</h3>
-                                <p>A leading digital platform that connects B2B, Supply Chain, 
-                                    Engineering Products, and Services using AI and IoT to streamline
-                                    buying and selling. A leading digital platform that connects B2B, 
-                                    Supply Chain, Engineering Products, and Services 
-                                    using AI and IoT to streamline buying and selling. </p>
-                            </span>
-            
-                        </div>
+                    <div className="brand-logos">
+                        <img src={PHOTOS.PHOTO27} alt="" />
+                        <img src={PHOTOS.PHOTO6} alt="" />
+                        <img src={PHOTOS.PHOTO20} alt="" />
+                        <img src={PHOTOS.PHOTO12} alt="" />
+                        <img src={PHOTOS.PHOTO27} alt="" />
+                        <img src={PHOTOS.PHOTO6} alt="" />
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <section className="our-testimonials">
-                    <h3>What our clients say</h3>
-
-                    
-
-                        <Swiper
-                            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-                            spaceBetween={50}
-                            slidesPerView={1}
-                            onSlideChange={() => console.log('slide change')}
-                            onSwiper={(swiper) => console.log(swiper)}
-                            className='testimonial'
-                            navigation = {{
-                                nextEl: '.custom-next-button',
-                                prevEl: '.custom-prev-button',
-                            }}
-                            pagination={{ clickable: true }}
-                            autoplay={{delay: 3000}} //You can just say {true} to have the default 3sec
-                            >
-
-                            {
-                                Data.map((content) =>{
-                                    return(
-                                        <SwiperSlide className="mySlides">
-                                            <CustomPrevButton />
-                                            
-                                            <div className="testimony">
-                                                <img src={content.image} alt="" />
-                                                <p>{content.paragraph}</p>
-                                            </div>
-                            
-                                            <div className="testimony">
-                                                <img src={content.image2} alt="" />
-                                                <p>{content.paragraph2}</p>
-                                            </div>
-
-                                            <CustomNextButton />
-                                        </SwiperSlide>
-                                    )
-                                })
-                            }
-                        </Swiper>
-                    
-                </section>
-
-                <section className="satisfied-brands">
-                    <h3>Brands we've worked for</h3>
-                    <div className="brands">
-                        <div className="brand-logos">
-                            <img src={PHOTOS.PHOTO27} alt="" />
-                            <img src={PHOTOS.PHOTO6} alt="" />
-                            <img src={PHOTOS.PHOTO20} alt="" />
-                            <img src={PHOTOS.PHOTO12} alt="" />
-                            <img src={PHOTOS.PHOTO27} alt="" />
-                            <img src={PHOTOS.PHOTO6} alt="" />
-                        </div>
-
-                        <div className="brand-logos">
-                            <img src={PHOTOS.PHOTO27} alt="" />
-                            <img src={PHOTOS.PHOTO6} alt="" />
-                            <img src={PHOTOS.PHOTO20} alt="" />
-                            <img src={PHOTOS.PHOTO12} alt="" />
-                            <img src={PHOTOS.PHOTO27} alt="" />
-                            <img src={PHOTOS.PHOTO6} alt="" />
-                        </div>
-                    </div>
-                </section>
-
-                <section className="news-letter">
-                    <h3>Signup to our Newsletter to get updates on our latest products </h3>
-                    <form action="" method="post">
-                        <input type="text" placeholder="Email" />
-                        <button type="submit">Sign Up</button>
-                    </form>
-                </section>
-            </main>
-        </div>
+            <section className="news-letter">
+                <h3>Signup to our Newsletter to get updates on our latest products </h3>
+                <form action="" method="post">
+                    <input type="text" placeholder="Email" />
+                    <button type="submit">Sign Up</button>
+                </form>
+            </section>
+        </main>
     )
     
 };
